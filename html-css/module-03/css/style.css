@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 900px;
+}
+
+/*header*/
+.page-header {
+  margin-top: 46px;
+  margin-bottom: 72px;
+}
+
+.site-navigation {
+  /* margin: 0;
+  padding: 0; */
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu-item {
+  display: inline-block;
+  /* outline: 2px #8888 solid; */
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 95px;
+}
+
+.menu-link {
+  display: block;
+  padding: 28px 28px;
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  color: #626262;
+  text-transform: uppercase;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #43a1de;
+}
+
+/*main content*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.item {
+  margin-bottom: 50px;
+}
+
+.item-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.content-item {
+  display: inline-block;
+  width: 420px;
+  font-size: 14px;
+  margin-bottom: 60px;
+}
+
+.content-item:nth-child(2n + 1) {
+  margin-right: 60px;
+}
+
+.content-item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
+.img-description {
+  text-align: left;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #626262;
+}
+
+.article-title {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.article-content {
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  line-height: 24pt;
+}
+
+.btn {
+  margin-bottom: 70px;
+  padding: 0;
+  font-size: 20px;
+  width: 165px;
+  height: 60px;
+  border: 1px solid #626262;
+  background: transparent;
+  color: #626262;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #43a1de;
+  border: 1px solid #43a1de;
+}

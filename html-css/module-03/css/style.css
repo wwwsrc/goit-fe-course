@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
 
 .container {
   margin: 0 auto;
@@ -17,7 +17,7 @@ html {
 
 /*header*/
 .page-header {
-  margin-top: 46px;
+  padding-top: 46px;
   margin-bottom: 72px;
 }
 
@@ -41,7 +41,7 @@ html {
 .menu-link {
   display: block;
   padding: 28px 28px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-decoration: none;
   color: #626262;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ img {
 }
 
 .item {
-  margin-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .item-list {
@@ -108,20 +108,23 @@ img {
 
 .article-title {
   font-size: 30px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin-bottom: 36px;
   text-align: left;
 }
 
 .article-content {
   font-size: 14px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: left;
   line-height: 24pt;
 }
+.wrapper {
+  padding-bottom: 50px;
+}
 
 .btn {
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   padding: 0;
   font-size: 20px;
   width: 165px;

@@ -1,0 +1,239 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Header */
+
+.page-header {
+  margin-bottom: 100px;
+}
+
+.navigation {
+  padding: 30px 0;
+}
+
+.menu {
+  /*   margin: 0;
+  padding: 0; */
+  float: right;
+  margin-top: 10px;
+}
+
+.menu-item {
+  float: left;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.menu-link {
+  padding: 10px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #515151;
+}
+
+.menu-link:hover {
+  color: #1abc9c;
+  transition: 500ms;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*Logo site*/
+
+.site-logo {
+  float: left;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555252;
+}
+
+.site-logo:visited {
+  color: #515151; /* Цвет активных ссылок */
+}
+.site-logo::first-letter {
+  color: #1abc9c;
+}
+
+/*main*/
+
+.item-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  color: #555252;
+  margin-bottom: 90px;
+}
+
+.item-title::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  content: "";
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.item-card {
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+  width: 255px;
+  /* width: calc(100%/4 - 23px); */
+  height: 282px;
+  background-color: #e8effc;
+}
+
+.item-card:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.item-card:not(:nth-child(n + 4)) {
+  margin-bottom: 30px;
+}
+
+.price-tag {
+  width: 255px;
+  height: 40px;
+  background: linear-gradient(90deg, #323232 80%, #8c8c8c 20%);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+.price-item-title {
+  float: left;
+}
+
+.price-item-value {
+  float: right;
+}
+
+.product-item-img {
+  object-fit: contain;
+  vertical-align: middle; /* на что влияет? двигается по пикселю высота*/
+}
+
+.item-card:hover .price-tag {
+  background: linear-gradient(90deg, #1abc9c 80%, #7fd9c7 20%);
+  transition: 3s; /* тут это свойство почему то не отрабатывает*/
+}
+
+.item-card:hover {
+  box-shadow: 6px 4px 5px 0px #323232;
+  transition: 500ms;
+}
+
+.product {
+  margin-bottom: 100px;
+}
+
+/* section news */
+.news-block {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555252;
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+.news-block::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  content: "";
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.news-card {
+  float: left;
+  width: calc(100% / 3 - 20px);
+  /* width: 350px; */
+  height: 500px;
+}
+.news-card img {
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.news-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.news-title {
+  display: inline-block;
+  text-align: left;
+  font-size: 18px;
+}
+
+.news-title::after {
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+  content: "";
+  margin-top: 14px;
+  margin-bottom: 17px;
+}
+
+.news-content-short {
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.news-link {
+  display: block;
+  width: 160px;
+  height: 50px;
+  font-size: 18px;
+  background: #4ec6ab;
+  border-radius: 2%;
+  padding: 15px 20px;
+  text-decoration: none;
+  user-select: none;
+  color: #fff;
+}
+
+.news-link:hover {
+  box-shadow: 6px 4px 5px 0px rgba(48, 45, 48, 1);
+}

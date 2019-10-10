@@ -310,21 +310,21 @@ h2 {
 
 }
 .item-like-btn {
-  background-image: url(/images/heart.png);
+  background-image: url(../images/heart.png);
 }
 
 .item-compare-btn {
-  background-image: url(/images/arrows.png);
+  background-image: url(../images/arrows.png);
 }
 
 .item-time-btn {
-  background-image: url(/images/clock.png);
+  background-image: url(../images/clock.png);
 }
 
 .item-buy-btn {
   width: 166px;
   height: 50px;
-  background-image: url(/images/basket.png);
+  background-image: url(../images/basket.png);
   background-repeat: no-repeat;
   background-position: center left 8px;
   background-color: rgb(50, 50, 50);

@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MART placemarkert</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>MART placemarkert</title>
   </head>
   <body>
     <header class="page-header container">
-      <nav class="navigation">
+      <h1 class="visually-hidden">mart market</h1>
+      <nav class="clearfix">
         <a href="/index.html" class="site-logo">mart</a>
         <ul class="menu">
           <li class="menu-item"><a href="#" class="menu-link">home</a></li>
@@ -32,70 +33,61 @@
       </nav>
     </header>
     <section class="slider-section">
-      <div class="slider">
-        <button class="slider-ctrl slider-ctrl-bckwrd">
-          <img
-            src="./images/slider-arrow-left.png"
-            alt="arrow left"
-            class="slider-ctrl-image"
-          /></button
-        ><button class="slider-ctrl slider-ctrl-frwrd">
-          <img
-            src="./images/slider-arrow-right.png"
-            alt="arrow right"
-            class="slider-ctrl-image"
-          />
-        </button>
-        <div class="overlay"></div>
-        <div class="slider-title">
-          <h2>AFFORDABLE PARIS TOURS</h2>
-          <p>CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
-        </div>
-        <img
-          src="./images/slider5-module.png"
-          alt="slider-pic"
-          class="slider-image"
-        />
-      </div>
-    </section>
+      <div class="slider-overlay">
+         <button class="slider-ctrl slider-ctrl-bckwrd"></button>
+          <button class="slider-ctrl slider-ctrl-frwrd"></button></div>
+<ul class="slides">
+  <li class="slides-item"><img
+    src="./images/slider5-module.png"
+    width="1600"
+    height="600"
+    alt="slider main picture"
+    class="slider-image"
+  />
+  <h2 class="slider-title container">
+      <span class="slider-title-name">AFFORDABLE PARIS TOURS</span>
+      <span class="slider-title-info">CITY TOURS / TOUR TICKETS / TOUR GUIDES</span>
+    </h2></li>
+</ul>
+      </section>
     <!-- main -->
-    <main class="wrapper">
-      <h1 class="visually-hidden">mart market</h1>
+    <main class="main">
       <section class="product container">
-        <h2 class="item-title">new collection</h2>
+        <h3 class="item-title">new collection</h3>
         <ul class="product-item clearfix">
+            <li class="item-card">
+                <div class="item-hover">
+              <div class="overlay-item-card">
+                <ul class="item-card-control clearfix">
+                  <li class="item-card-control-list">
+                    <button class="item-like-btn"></button>
+                  </li>
+                  <li class="item-card-control-list">
+                    <button class="item-compare-btn"></button>
+                  </li>
+                  <li class="item-card-control-list">
+                    <button class="item-time-btn"></button>
+                  </li>
+                  <li class="item-card-control-list">
+                    <button class="item-buy-btn">add to cart</button>
+                  </li>
+                </ul>
+              </div>
+              <img
+                src="./images/blue_tshirt.png"
+                alt="product image"
+                width="255"
+                height="284"
+                class="product-item-img"
+              />
+              </div>
+                <div class="price-tag clearfix">
+                    <a href="#"><h4 class="price-item-title">Blue man tshirt</h4
+                  ></a><span class="price-item-value">31$</span>
+                </div>
+            </li>
           <li class="item-card">
-            <div class="overlay-item-card">
-              <ul class="item-card-control clearfix">
-                <li class="item-card-control-list">
-                  <button class="item-like-btn"></button>
-                </li>
-                <li class="item-card-control-list">
-                  <button class="item-compare-btn"></button>
-                </li>
-                <li class="item-card-control-list">
-                  <button class="item-time-btn"></button>
-                </li>
-                <li class="item-card-control-list">
-                  <button class="item-buy-btn">add to cart</button>
-                </li>
-              </ul>
-            </div>
-            <img
-              src="./images/blue_tshirt.png"
-              alt="product image"
-              width="255"
-              height="284"
-              class="product-item-img"
-            />
-            <a href="#">
-              <div class="price-tag clearfix">
-                <span class="price-item-title">blue tshirt &</span
-                ><span class="price-item-value">80$</span>
-              </div></a
-            >
-          </li>
-          <li class="item-card">
+              <div class="item-hover">
             <div class="overlay-item-card">
               <ul class="item-card-control clearfix">
                 <li class="item-card-control-list">
@@ -119,14 +111,14 @@
               height="284"
               class="product-item-img"
             />
-            <a href="#">
+            </div>
               <div class="price-tag clearfix">
-                <span class="price-item-title">woman tshirt</span
-                ><span class="price-item-value">31$</span>
-              </div></a
-            >
+                  <a href="#"><h4 class="price-item-title">checkered dress</h4
+                ></a><span class="price-item-value">91$</span>
+              </div>
           </li>
-          <li class="item-card ">
+          <li class="item-card">
+              <div class="item-hover">
             <div class="overlay-item-card">
               <ul class="item-card-control clearfix">
                 <li class="item-card-control-list">
@@ -150,14 +142,14 @@
               height="284"
               class="product-item-img"
             />
-            <a href="#">
+            </div>
               <div class="price-tag clearfix">
-                <p class="price-item-title">yellow tshirt</p>
-                <span class="price-item-value">21$</span>
-              </div></a
-            >
+                  <a href="#"><h4 class="price-item-title">yellow man tshirt</h4
+                ></a><span class="price-item-value">331$</span>
+              </div>
           </li>
           <li class="item-card">
+              <div class="item-hover">
             <div class="overlay-item-card">
               <ul class="item-card-control clearfix">
                 <li class="item-card-control-list">
@@ -181,12 +173,11 @@
               height="284"
               class="product-item-img"
             />
-            <a href="#">
+            </div>
               <div class="price-tag clearfix">
-                <p class="price-item-title">dress tshirt</p>
-                <span class="price-item-value">21$</span>
-              </div></a
-            >
+                  <a href="#"><h4 class="price-item-title">opacity 0.5 dress</h4
+                ></a><span class="price-item-value">99$</span>
+              </div>
           </li>
         </ul>
       </section>
@@ -194,7 +185,7 @@
     <footer class="page-footer">
       <p class="page-footer-content">
         All Rights Reserved © Dokan |
-        <span class="company">Designed ThemenGraph</span>
+        <span class="company"><a href="#">Designed ThemenGraph</a></span>
       </p>
     </footer>
   </body>

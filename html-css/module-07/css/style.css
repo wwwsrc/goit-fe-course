@@ -1,0 +1,285 @@
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
+    url("../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.page__header {
+  background-color: #ffffff;
+  padding: 30px 0 128px 0;
+}
+.main__menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 490px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item__link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222222;
+}
+
+.menu__item:hover .item__link {
+  color: #fed136;
+  transition: all 0.2s linear;
+}
+
+/* MAIN */
+
+.company__logo {
+  padding-left: 5px;
+}
+
+.services__title,
+.form__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  padding-bottom: 22px;
+}
+.services__title__info {
+  color: #777;
+  font-size: 16px;
+  text-align: center;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 10px 100px 10px;
+}
+
+.services__card {
+  /*position: relative;*/
+
+  /* flex: 0 0 390px; */
+  width: calc(100% / 3 - 23.33px);
+  padding-top: 100px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: justify;
+}
+.services__card__title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.services__card p {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+
+.services__card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 100px;
+}
+
+.services__card:nth-child(1) {
+  background-image: url("../images/Icon-Basket_07.png");
+}
+.services__card:nth-child(2) {
+  background-image: url("../images/icon_pc_07.png");
+}
+.services__card:nth-child(3) {
+  background-image: url("../images/Icon-Locked_07.png");
+}
+
+/* SECTION TEAM */
+.form__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 110px;
+  color: #ffffff;
+}
+
+.form__description {
+  margin: 0 auto;
+  max-width: 940px;
+  text-align: center;
+  padding: 20px 0 75px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #777777;
+}
+
+.form__background {
+  width: 100%;
+  background-color: #222222;
+  background-image: url(../images/Map\ Image_07.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+
+}
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  padding-left: 20px;
+}
+.contact__form textarea::placeholder {
+  padding-top: 14px;
+}
+
+.contact__form__textarea {
+  width: 455px;
+  height: 210px;
+  resize: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 2px;
+}
+
+.contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  padding-bottom: 115px;
+}
+.contact__form__inputs input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.contact__form__inputs input {
+  width: 455px;
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 2px;
+}
+.contact__input__list li:nth-child(-n + 2) {
+  margin-bottom: 30px;
+}
+
+.main {
+  padding-bottom: 88px;
+}
+/* стилизация плейсхолдеров
+.placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #bbbbbb;
+  font-size: 14px;
+}*/
+
+.contact__form-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact__form__btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: #fed136;
+  color: #fff;
+  width: 240px;
+  height: 65px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* .contact__input:focus {
+  outline-offset: 0;
+} */
+.contact__input:required:focus:valid{
+  outline: 1px #adff2f solid;
+}
+.contact__input:required:focus:invalid{
+  outline: 1px solid #ff0000;
+}
+.contact__form__textarea:required:focus:valid{
+  outline: 1px #adff2f solid;
+}
+.contact__form__textarea:required:focus:invalid{
+  outline: 1px solid #ff0000;
+}

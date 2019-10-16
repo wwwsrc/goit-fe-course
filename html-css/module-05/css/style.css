@@ -140,13 +140,18 @@ html {
   opacity: 0.522;
   z-index: 2;
 }
+.wrapper-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
 
 .slider-ctrl {
   background-repeat: no-repeat;
   background-position: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+/*   transform: translateY(-50%); */
   background-color: #4ec6ab;
   opacity: 0.651;
   width: 104px;
@@ -161,10 +166,12 @@ html {
   opacity:1;
 }
 .slider-ctrl-bckwrd {
+  float: left;
   left: 0;
   background-image: url(../images/slider-arrow-left.png);
 }
 .slider-ctrl-frwrd {
+  float: right;
   right: 0;
   background-image: url(../images/slider-arrow-right.png);
 }

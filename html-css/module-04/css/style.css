@@ -46,10 +46,8 @@ html {
 }
 
 .menu {
-  /*   margin: 0;
-  padding: 0; */
   float: right;
-  margin-top: 10px;
+
 }
 
 .menu-item {
@@ -59,7 +57,10 @@ html {
   text-decoration: none;
 }
 .menu-link {
-  padding: 10px 10px;
+  display: block;
+  padding: 10px 0 10px 0;
+  font-family: "Opens Sans", sans-serif;
+  font-weight: 900;
   font-size: 14px;
   text-decoration: none;
   color: #515151;
@@ -78,6 +79,8 @@ html {
 
 .site-logo {
   float: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   font-size: 30px;
   text-transform: uppercase;
   text-decoration: none;
@@ -89,6 +92,8 @@ html {
 }
 .site-logo::first-letter {
   color: #1abc9c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
 }
 
 /*main*/
@@ -96,6 +101,8 @@ html {
 .item-title {
   text-align: center;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-size: 48px;
   font-weight: bold;
   color: #555252;
@@ -118,7 +125,6 @@ html {
   list-style-type: none;
   width: 255px;
   /* width: calc(100%/4 - 23px); */
-  height: 282px;
   background-color: #e8effc;
 }
 
@@ -131,19 +137,28 @@ html {
 }
 
 .price-tag {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
   width: 255px;
-  height: 40px;
-  background: linear-gradient(90deg, #323232 80%, #8c8c8c 20%);
   color: #fff;
   text-transform: uppercase;
-  padding: 10px 10px;
+  line-height: 40px;
 }
 
 .price-item-title {
+  padding-left: 5px;
+  text-align: left;
   float: left;
+  width: 200px;
+    float: left;
+    background: #323232;
 }
 
 .price-item-value {
+  float: right;
+  width: 55px;
+  background-color: #8c8c8c;
   float: right;
 }
 
@@ -152,9 +167,12 @@ html {
   vertical-align: middle; /* на что влияет? двигается по пикселю высота*/
 }
 
-.item-card:hover .price-tag {
-  background: linear-gradient(90deg, #1abc9c 80%, #7fd9c7 20%);
-  transition: 3s; /* тут это свойство почему то не отрабатывает*/
+.item-card:hover .price-item-title {
+  background: #1abc9c;
+
+}
+.item-card:hover .price-item-value{
+  background-color: #7fd9c7;
 }
 
 .item-card:hover {
@@ -167,7 +185,12 @@ html {
 }
 
 /* section news */
+.news{
+  padding-bottom: 80px
+}
 .news-block {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   font-weight: bold;
   color: #555252;
@@ -188,8 +211,7 @@ html {
 .news-card {
   float: left;
   width: calc(100% / 3 - 20px);
-  /* width: 350px; */
-  height: 500px;
+
 }
 .news-card img {
   object-fit: contain;
@@ -199,6 +221,9 @@ html {
   margin-right: 30px;
 }
 .news-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #555252;
   display: inline-block;
   text-align: left;
   font-size: 18px;
@@ -211,17 +236,23 @@ html {
   background-color: #1abc9c;
   content: "";
   margin-top: 14px;
-  margin-bottom: 17px;
 }
 
 .news-content-short {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   display: inline-block;
   text-align: left;
   font-size: 14px;
-  margin-bottom: 15px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .news-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   display: block;
   width: 160px;
   height: 50px;

@@ -100,7 +100,8 @@ html {
 .header__login,
 .header__signup {
   font-family: "Montserrat", sans-serif;
-  font-size:14px;
+  font-weight: 700;
+  font-size:0.875rem;
   border: none;
   color: #ffffff;
   background-color: transparent;

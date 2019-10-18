@@ -105,15 +105,18 @@ html {
   border: none;
   color: #ffffff;
   background-color: transparent;
+  border:solid 2px transparent;
+  border-radius: 20px;
+
 }
 
 .header__login {
   margin-right: 20px;
-}
 
-.header__signup {
+}
+.header__login:hover, .header__signup:hover {
   border: solid 2px #ffffff;
-  border-radius: 20px;
+
 }
 
 .logo__mobile {

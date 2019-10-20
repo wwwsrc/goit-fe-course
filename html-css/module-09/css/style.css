@@ -1,0 +1,322 @@
+/* контейнер>строка>ячейка
+контейнер только строки
+строках только ячейки
+в ячейках могуть быть вложены другие строки
+
+от маленького екрана к большому
+
+container можно применить сразу на section
+
+фон вешать на секцию
+
+строка секция, ячейки компоненты
+
+общий фон, обернуть сontainer и section
+
+*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+/* montserrat-regular - latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat Regular"), local("Montserrat-Regular"),
+      url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - BOLD latin */
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat Bold"), local("Montserrat-Bold"),
+      url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* roboto-300 - latin */
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Roboto Light"), local("Roboto-Light"),
+      url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v20-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Roboto"), local("Roboto-Regular"),
+      url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  .header{
+    background-image: url(../images/header_background_mobile-320.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+.nav{
+    padding-top: 1.25rem;
+    padding-bottom: 8.25rem;
+   /*  position: absolute;
+    top:2%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+.nav__menu{
+    list-style-type: none;
+
+   /* display: flex;*/
+}
+.login__btn, .signup__btn{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size:0.875rem;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+  border:solid 2px transparent;
+  border-radius: 20px;
+}
+.login__btn{
+    margin-right: 30px;
+}
+.login__btn:hover, .signup__btn:hover {
+    border: solid 2px #ffffff;
+    cursor: pointer;
+  }
+  .banner__btn:hover, .partner__btn:hover {
+    box-shadow: 0px 3px 70px 8px rgba(255,78,80,0.57);
+    }
+
+/* Banner section */
+
+
+.logo__mobile {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+    user-select: none;
+    color: #ffffff;
+  }
+.banner__title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1.25rem;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+.banner__title_info{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  color: #ffffff;
+}
+.banner__btn{
+    display: block;
+    max-width: 320px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    width: 100%;
+    height: 2.5rem;
+}
+/* MAIN */
+.main {
+    padding-bottom: 3.5625rem;
+  }
+  .partner__list{
+      padding-bottom:1.875rem;
+  }
+
+  .partner__btn {
+    display: block;
+    max-width: 320px;
+    font-family: "Montserrat", sans-serif;
+    color: #ff4e50;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid #ff4e50;
+       text-align: center;
+    line-height: 40px;
+  }
+  .partner__list__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    padding-top: 4.375rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+  .partner__list__photo-wrapper img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+ .partner__list__card {
+    text-align: center;
+  }
+  .partner__list__card h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 1.25rem 0 1.25rem 0;
+  }
+  .partner__list__card p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    text-align: center;
+    font-weight: 300;
+    color: #666666;
+  }
+
+  .partner__list__card:not(:nth-last-of-type(1)){
+    margin-bottom: 40px;
+  }
+  .partner__list__photo-wrapper {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+  }
+  .partner__list__photo-wrapper::after {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    }
+
+  .partner__list__card:nth-child(1) .partner__list__photo-wrapper::after {
+    background-image: url("../images/icon-tv.png");
+    background-color: #ff4e50;
+  }
+  .partner__list__card:nth-child(2) .partner__list__photo-wrapper::after {
+    background-image: url("../images/icon-kolba.png");
+    background-color: #1cd7ad;
+  }
+
+  .partner__list__card:nth-child(3) .partner__list__photo-wrapper::after {
+    background-image: url("../images/icon-coffee.png");
+    background-color: #ffa507;
+  }
+
+  .partner__list__card:nth-child(4) .partner__list__photo-wrapper::after {
+    background-image: url("../images/icon-telegram.png");
+    background-color: #4e73db;
+  }
+
+
+  @media (min-width: 768px){
+
+.header{
+    background-image: url(../images/midle.jpg);
+}
+.logo__desktop{
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #ffffff;
+   }
+   .banner__title {
+    font-size: 3.25rem;
+  }
+  .banner__title_info {
+    font-size: 1.5rem;
+  }
+  .partner__list{
+    padding-bottom:2.5rem;
+}
+.partner__list__card:nth-last-of-type(2){
+    margin-bottom: 0rem;
+  }
+
+  .main {
+    padding-bottom: 2.5rem;
+  }
+  }
+
+  @media (min-width: 992px){
+
+    .header {
+        background-image: url(../images/desktop-bg.jpg);
+    }
+
+
+      .partner__list__card:nth-child(n){
+        margin-bottom: 0px;
+      }
+      .main {
+        padding-bottom: 4.5625rem;
+      }
+  }

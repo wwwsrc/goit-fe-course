@@ -1,0 +1,73 @@
+.services__title {
+  display: block;
+  text-align: center;
+  font-family: $title-font;
+  text-transform: uppercase;
+  color: $title-font-color;
+  &_cursive{
+    display: block;
+    font-size: 24px;
+    font-family: $title-font-cursive;
+    font-weight: 400;
+    padding-bottom: 22px;
+  }
+  &_bold {
+    display: block;
+    font-size: 30px;
+    font-family: $title-font;
+    font-weight: bold;
+  }
+}
+
+
+.services__title:after {
+   @extend %title-after;
+  }
+
+.servicesList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px 10px 0 10px;
+  &__title{
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-size: 14px;
+    color: $title-font-color;
+    margin-bottom: 20px;
+  }
+  &__card {
+    width: calc(100% / 3 - 20px);
+   padding-left: 80px;
+   background-repeat: no-repeat;
+   background-position: 20px 0px;
+
+ }
+ &__card p {font-family: $servicestextfont;
+    font-size: 15px;
+    color: #999999;
+
+ }
+ &__card:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 100px;
+  }
+  &__card:nth-child(1) {
+    background-image: url("../images/services-icons/alarmclock.svg");
+  }
+  &__card:nth-child(2) {
+    background-image: url("../images/services-icons/linegraph.svg");
+  }
+  &__card:nth-child(3) {
+    background-image: url("../images/services-icons/computer.svg");
+  }
+  &__card:nth-child(4) {
+    background-image: url("../images/services-icons/book.svg");
+  }
+  &__card:nth-child(5) {
+    background-image: url("../images/services-icons/home.svg");
+  }
+  &__card:nth-child(6) {
+    background-image: url("../images/services-icons/digital.svg");
+  }
+}

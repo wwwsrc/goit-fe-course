@@ -1,0 +1,49 @@
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 63px;
+    border-top: solid 1px #e5e5e5;
+    align-items: center;
+  }
+  .companyContact {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #333333;
+  }
+  .companyContact_color {
+    text-decoration: none;
+    color: #95e1d3;
+  }
+
+  .subscribeForm__btn {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #95e1d3;
+    border: none;
+    width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .subscribeForm input[type="text"] {
+    width: 228px;
+    height: 40px;
+    padding: 5px 0px 5px 5px;
+    border-radius: 1px;
+    border: 1px solid #e7e7e7;
+  }
+
+  .subscribeForm__input::placeholder{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #cccccc;
+    font-size: 15px;
+  }

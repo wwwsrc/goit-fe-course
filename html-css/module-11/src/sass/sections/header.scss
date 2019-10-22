@@ -1,0 +1,129 @@
+
+.banner{
+    background-image: linear-gradient( 90deg, rgba(252,227,138, 0.8) 0%, rgba(243,129,129, 0.8) 100%), url(../images/eagle-native.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 142vh; */
+    /* background-blend-mode: multiply; */
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+      .banner {
+          background-image: linear-gradient( 90deg, rgba(252,227,138, 0.8) 0%, rgba(243,129,129, 0.8) 100%), url("../images/eagle-native@2x.jpg");
+      }
+  }
+  .menuCart, .menuSearch{
+   background-color: transparent;
+   border: none;
+   &__svg{
+    width: 18px;
+    height: 16px;
+    fill: #ffffff;
+   }
+   &:hover{
+     .menuSearch__svg, .menuCart__svg{
+       fill: #fce38a;
+     }
+   }
+  }
+
+
+ /*  .menuSearch:hover .menuSearch__svg, .menuCart:hover .menuCart__svg{
+    fill: #fce38a;
+  } */
+  .ctrlWrapper{
+    width: 625px;
+    @extend %flex-between;
+
+  }
+
+  .header {
+    padding: 30px 0 230px 0;
+    &__info{
+      text-align-last: center;
+      font-family: "Kaushan Script", sans-serif;
+      font-weight: 400;
+      font-size: 72px;
+      color: $header-title-color;
+    margin-bottom: 30px;
+    }
+  }
+
+   .navigation {
+    @extend %flex-between;
+    align-items: center;
+    padding-bottom: 180px;
+  }
+  .navMenu {
+    @extend %flex-between;
+    width: 490px;
+    list-style-type: none;
+  }
+
+  .navMenu__link {
+    position: relative;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    &:hover, &:focus {
+      color: #fce38a;
+      transition: all 0.2s linear;
+    }
+  }
+
+  .navMenu__link::after {
+    display: block;
+    position: absolute;
+    height: 3px;
+    background-color: #fce38a;
+    content: "";
+    width: 100%;
+    margin-top: 10px;
+    color: #fce38a;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s linear;
+
+
+
+  }
+  .navMenu__item{
+    &:hover{
+      .navMenu__link::after{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+
+
+  .sectionTitle{
+    text-align-last: center;
+  font-family: $title-font;
+  font-weight: 700;
+  font-size: 150px;
+  color: $header-title-color;
+  margin-top: 0px;
+  margin-bottom: 124px;
+  line-height:120px;
+  }
+
+  .sectionBtn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  width: 164px;
+  height: 44px;
+  background-color: transparent;
+  border:solid 3px rgb(255, 255, 255);
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+
+  }

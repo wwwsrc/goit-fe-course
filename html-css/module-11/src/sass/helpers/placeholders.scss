@@ -1,0 +1,14 @@
+%flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+%title-after{
+    display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  content: "";
+  margin: 0 auto;
+  margin-top: 40px;
+}

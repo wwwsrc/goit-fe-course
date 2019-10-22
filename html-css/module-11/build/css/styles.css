@@ -412,7 +412,8 @@ html {
 
 .ctrlWrapper,
 .navigation,
-.navMenu {
+.navMenu,
+.footerSection {
   display: flex;
   justify-content: space-between;
 }
@@ -433,8 +434,6 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 142vh; */
-  /* background-blend-mode: multiply; */
 }
 
 .menuCart,
@@ -456,10 +455,6 @@ html {
 .menuSearch:hover .menuCart__svg {
   fill: #fce38a;
 }
-
-/*  .menuSearch:hover .menuSearch__svg, .menuCart:hover .menuCart__svg{
-    fill: #fce38a;
-  } */
 
 .ctrlWrapper {
   width: 625px;
@@ -489,6 +484,11 @@ html {
   list-style-type: none;
 }
 
+.navMenu__item:hover .navMenu__link::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .navMenu__link {
   position: relative;
   text-decoration: none;
@@ -515,11 +515,6 @@ html {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s linear;
-}
-
-.navMenu__item:hover .navMenu__link::after {
-  opacity: 1;
-  visibility: visible;
 }
 
 .sectionTitle {
@@ -651,26 +646,6 @@ html {
   font-weight: bold;
 }
 
-/*  .team__title:after {
-      @extend %title-after;
-  }
- */
-
-/*  .team__title_cursive {
-    display: block;
-    font-size: 24px;
-    font-family: $title-font-cursive;
-    font-weight: 400;
-    padding-bottom: 22px;
-  }
-  .team__title_bold {
-    display: block;
-    font-size: 30px;
-    font-family: $title-font;
-    font-weight: bold;
-  }
- */
-
 .team__description {
   margin: 0 auto;
   max-width: 980px;
@@ -684,11 +659,6 @@ html {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-}
-
-.team__card {
-  width: 380px;
-  text-align: center;
 }
 
 .team__member {
@@ -731,78 +701,10 @@ html {
   transition: all 0.2s linear;
 }
 
-.team__card:hover .team__iconsOverlay {
-  opacity: 1;
-  box-shadow: 10px 10px 0px 0px #95e1d3;
-  transform: translate(-10px, -10px);
+.team__card {
+  width: 380px;
+  text-align: center;
 }
-
-.team__card:hover .team__memberPhoto {
-  transform: translate(-10px, -10px);
-}
-
-/* .team__description {
-    margin: 0 auto;
-    max-width: 980px;
-    text-align: center;
-    padding: 90px 0 95px 0;
-    font-family: $servicestextfont;
-    font-size: 15px;
-  }
-
-  .team__list {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .team__card {
-    width: 380px;
-    text-align: center;
-  }
-
-  .team__member {
-    font-family: "Montserrat", sans-serif;
-    margin: 30px 0 16px 0;
-    text-transform: uppercase;
-    color: #333333;
-  }
-  .team__position {
-    font-family: $servicestextfont;
-    font-size: 15px;
-    font-weight: 300;
-    font-style: italic;
-    color: #999999;
-  }
-
-
-  .team__overlayWrapper {
-    position: relative;
-    width: 100%;
-  }
-  .team__iconsOverlay {
-    background-image: linear-gradient(
-      to top,
-      rgba(252, 227, 138, 0.9) 0%,
-      rgba(243, 129, 129, 0.9) 100%
-    );
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 380px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.2s linear;
-  }
-
-  .team__memberPhoto {
-    display: block;
-    transition: all 0.2s linear;
-  } */
 
 .team__card:hover .team__iconsOverlay {
   opacity: 1;
@@ -828,7 +730,13 @@ html {
   background-color: #fce38a;
 }
 
-.team__iconList li:not(:last-child) {
+.team__iconList a:hover,
+.team__iconList a:focus {
+  background-color: #f38181;
+  transition: all 0.2s linear;
+}
+
+.team__iconList a li:not(:last-child) {
   margin-right: 1px;
 }
 
@@ -838,35 +746,11 @@ html {
   fill: #f38181;
 }
 
-/* .team__iconFacebook {
-    background-image: url(../images/icon_facebook.png);
-  }
-
-  .team__twitter__icons {
-    background-image: url(../images/icon_twitter.png);
-  }
-
-  .team__iconPinterest {
-    background-image: url(../images/icon_pinterest.png);
-  }
-
-  .team__iconInstagram {
-    background-image: url(../images/icon_instagram.png);
-  } */
-
-.team__iconList a:hover,
-.team__iconList a:focus {
-  background-color: #f38181;
-  transition: all 0.2s linear;
-}
-
 .team__iconitem:hover .team__iconsvg {
   fill: #ffffff;
 }
 
 .footerSection {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 63px;
   border-top: solid 1px #e5e5e5;

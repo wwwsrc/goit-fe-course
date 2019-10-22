@@ -1,28 +1,28 @@
-.services__title {
-  display: block;
-  text-align: center;
-  font-family: $title-font;
-  text-transform: uppercase;
-  color: $title-font-color;
-  &_cursive{
-    display: block;
-    font-size: 24px;
-    font-family: $title-font-cursive;
-    font-weight: 400;
-    padding-bottom: 22px;
-  }
-  &_bold {
-    display: block;
-    font-size: 30px;
-    font-family: $title-font;
-    font-weight: bold;
-  }
+.services{
+    &__title{
+        display: block;
+        text-align: center;
+        font-family: $title-font;
+        text-transform: uppercase;
+        color: $title-font-color;
+        &_cursive{
+          display: block;
+          font-size: 24px;
+          font-family: $title-font-cursive;
+          font-weight: 400;
+          padding-bottom: 22px;
+        }
+        &_bold {
+          display: block;
+          font-size: 30px;
+          font-family: $title-font;
+          font-weight: bold;
+        }
+        &:after{
+            @extend %title-after;
+        }
+    }
 }
-
-
-.services__title:after {
-   @extend %title-after;
-  }
 
 .servicesList {
   list-style-type: none;

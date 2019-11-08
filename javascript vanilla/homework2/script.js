@@ -98,20 +98,21 @@ if (numbers.length === 0) {
  */
 
 //*******************************************Task #7***********************************************************************************
+
 /*
 //const allLogins = ["Alex", "Ziesh"];
 const allLogins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 let login = prompt("введите логин, от 4 до 16 символов");
 
-const isLoginValid = function(login) {
+const isLoginValid = login => {
   return login.length >= 4 && login.length <= 16 ? true : false;
 };
 
-const isLoginUnique = function(allLogins, login) {
+const isLoginUnique = (allLogins, login) => {
   return allLogins.includes(login);
 };
 
-const addLogin = function(allLogins, login) {
+const addLogin = (allLogins, login) => {
   if (login) {
     if (isLoginValid(login)) {
       if (!isLoginUnique(allLogins, login)) {

@@ -45,7 +45,7 @@ function showModal(event) {
 function hideModal(event) {
   if (
     event.target.dataset.action != "close-lightbox" &&
-    event.target.className != "material-icons" &&
+    event.target.nodeName != "I" &&
     event.target.classList != "lightbox__content" &&
     event.code != "Escape"
   )
@@ -56,20 +56,25 @@ function hideModal(event) {
 
 ulListner.addEventListener("click", showModal);
 modalListner.addEventListener("click", hideModal);
-document.addEventListener("keyup", hideModal);
+document.addEventListener("keydown", hideModal);
 
-/* ne arbayten */
+//slider control
+/* document.addEventListener("keydown", ctrlSlider);
 
-/* function ska(event) {
-  console.log(event);
-  console.log(KeyboardEvent.keyCode);
-  // event.stopPropagation();
-  // console.log(event.code === "Escape");
-  if (event.code != "Escape") return;
-  //alert("fuck!");
-  modal.classList.remove("is-open");
-}
+const imgArr = gallery.map(elem => elem.original);
+console.log(imgArr.length - 1);
 
-// .console.log(eventTarget.keypress);
+function ctrlSlider(event) {
+  let imgCurrentLink = fullImg.getAttribute("src");
+  console.log(imgCurrentLink);
+  console.log(event.keyCode);
 
-document.addEventListener("keyup", ska); */
+  if (event.code === "ArrowRight") {
+    imgArr.forEach((item, i) => imgCurrentLink === item);
+    console.log(item);
+    fullImg.setAttribute("src", imgArr[i]);
+  }
+
+  if (event.code === "ArrowLeft") {
+  }
+} */
